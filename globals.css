@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{--navy:#102b4e;--blue:#2878c8;--muted:#718096;--line:#e6edf4}
+*{box-sizing:border-box}body{margin:0;background:#f5f8fc;color:#182b42;font-family:'DM Sans',sans-serif}
+h1,h2,h3,.brand{font-family:'Manrope',sans-serif}
+button,input,select{font:inherit}button{cursor:pointer}
+.shell{display:flex;min-height:100vh}.sidebar{width:248px;background:#102b4e;color:#d9e6f5;padding:25px 17px;display:flex;flex-direction:column;flex-shrink:0}
+.brand{font-size:21px;font-weight:800;color:#fff;letter-spacing:-.7px;padding:4px 12px 32px}.brand span{color:#6bb8ff}
+.nav-label{font-size:10px;text-transform:uppercase;letter-spacing:1.4px;color:#819bb7;padding:12px 12px 8px}
+.nav{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:9px;color:#c5d5e7;text-decoration:none;font-size:13px;margin:2px 0}
+.nav:hover,.nav.active{background:#1d426b;color:white}.nav.active{box-shadow:inset 3px 0 #63b4ff}
+.side-bottom{margin-top:auto;border-top:1px solid #2b4b6d;padding-top:18px}
+.main{flex:1;min-width:0}.topbar{height:72px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 34px}
+.content{padding:32px 36px;max-width:1500px;margin:auto}.eyebrow{color:#64809e;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.page-title{font-size:27px;letter-spacing:-.8px;margin:6px 0 5px;color:#142b46}.sub{font-size:13px;color:#7a8ba0}
+.card{background:white;border:1px solid #e7edf4;border-radius:13px;padding:20px;box-shadow:0 3px 12px rgba(23,54,86,.025)}
+.stat{display:flex;align-items:flex-start;justify-content:space-between}.stat-icon{width:40px;height:40px;border-radius:11px;background:#edf6ff;color:#2878c8;display:grid;place-items:center}
+.stat-value{font-family:'Manrope';font-size:28px;font-weight:800;margin:14px 0 2px;color:#152d49}.stat-label{font-size:12px;color:#74869b}
+.grid-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin:25px 0}
+.section-head{display:flex;align-items:center;justify-content:space-between;margin:26px 0 14px}.section-head h2{font-size:16px;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:8px;background:#176fc1;color:#fff;padding:10px 15px;font-weight:700;font-size:12px;text-decoration:none}
+.btn:hover{background:#105b9f}.btn.secondary{background:#edf4fb;color:#285b8b}.btn.ghost{background:transparent;color:#45627f;border:1px solid #dce6f0}
+.table-wrap{overflow:auto;background:white;border:1px solid #e7edf4;border-radius:12px}
+table{width:100%;border-collapse:collapse;min-width:680px}th{text-align:left;color:#8494a7;font-size:10px;text-transform:uppercase;letter-spacing:.8px;font-weight:700;background:#fbfcfe}
+td,th{padding:14px 17px;border-bottom:1px solid #edf1f5;font-size:12px}td{color:#40546b}tr:last-child td{border-bottom:0}
+.pill{display:inline-flex;padding:5px 9px;border-radius:20px;font-size:10px;font-weight:700;background:#edf4fb;color:#3b6e9e}.pill.green{background:#e7f7ef;color:#208452}.pill.orange{background:#fff4e4;color:#ad6b12}.pill.red{background:#fff0ef;color:#c34c45}
+.search{border:1px solid #dfe7ef;border-radius:8px;padding:10px 12px;background:#fff;color:#334b64;min-width:220px;font-size:12px}
+.empty{padding:42px;text-align:center;color:#8092a7}.drop{border:1.5px dashed #a9c4df;background:#f7fbff;border-radius:12px;padding:38px;text-align:center}
+.form-input{width:100%;border:1px solid #dce5ee;border-radius:8px;padding:11px 12px;margin:7px 0 15px;background:white}
+@media(max-width:900px){.sidebar{width:70px;padding:20px 9px}.brand{font-size:0;padding:8px 10px 28px}.brand:after{content:'F';font-size:22px}.nav{justify-content:center;font-size:0;padding:13px}.nav svg{width:19px;height:19px}.nav-label{font-size:0;padding:8px}.side-bottom .nav{font-size:0}.content{padding:25px 20px}.grid-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.topbar{padding:0 16px}.content{padding:22px 14px}.grid-stats{gap:9px}.card{padding:15px}.stat-value{font-size:23px}.search{min-width:0;width:100%}.section-head{align-items:flex-start;gap:10px;flex-direction:column}}
